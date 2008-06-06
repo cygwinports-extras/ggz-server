@@ -1,0 +1,177 @@
+ggz-server
+------------------------------------------
+GGZ Gaming Zone server and game servers.
+
+The main GGZ server (ggzd) and its configuration utility ggzduedit are 
+part of this packages, as are a lot of game servers written in C and 
+C++. In addition, the ggzdmod library and its C++ wrapper is included.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+  gamin-0.1.9-1
+  libdb4.4-4.4.20.4-2
+  libexpat1-2.0.1-1
+  libggz2-0.0.14.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20060817-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.ggzgamingzone.org/packages/
+
+Canonical download:
+  ftp://ftp.ggzgamingzone.org/pub/ggz/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ggz-server-0.0.14.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ggz-server-0.0.14.1-X.cygport all
+
+This will create:
+  /usr/src/ggz-server-0.0.14.1-X-src.tar.bz2
+  /usr/src/ggz-server-0.0.14.1-X.tar.bz2
+  /usr/src/libggzdmod++-devel-0.0.14.1-X.tar.bz2
+  /usr/src/libggzdmod++1-0.0.14.1-X.tar.bz2
+  /usr/src/libggzdmod-devel-0.0.14.1-X.tar.bz2
+  /usr/src/libggzdmod6-0.0.14.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/ggzd/games/ccheckers.dsc
+  /etc/ggzd/games/chess.dsc
+  /etc/ggzd/games/combat.dsc
+  /etc/ggzd/games/connectx.dsc
+  /etc/ggzd/games/dots.dsc
+  /etc/ggzd/games/escape.dsc
+  /etc/ggzd/games/geekgame.dsc
+  /etc/ggzd/games/ggzcards-bridge.dsc
+  /etc/ggzd/games/ggzcards-fortytwo.dsc
+  /etc/ggzd/games/ggzcards-hearts.dsc
+  /etc/ggzd/games/ggzcards-lapocha.dsc
+  /etc/ggzd/games/ggzcards-spades.dsc
+  /etc/ggzd/games/ggzcards-suaro.dsc
+  /etc/ggzd/games/ggzcards-sueca.dsc
+  /etc/ggzd/games/ggzcards-whist.dsc
+  /etc/ggzd/games/ggzcards.dsc
+  /etc/ggzd/games/hastings.dsc
+  /etc/ggzd/games/keepalive.dsc
+  /etc/ggzd/games/krosswater.dsc
+  /etc/ggzd/games/muehle.dsc
+  /etc/ggzd/games/reversi.dsc
+  /etc/ggzd/games/spades.dsc
+  /etc/ggzd/games/tictactoe.dsc
+  /etc/ggzd/games/tuxman.dsc
+  /etc/ggzd/games/widelands.dsc
+  /etc/ggzd/ggzd.conf.example
+  /etc/ggzd/ggzd.motd
+  /etc/ggzd/rooms/ccheckers.room
+  /etc/ggzd/rooms/chess.room
+  /etc/ggzd/rooms/combat.room
+  /etc/ggzd/rooms/connectx.room
+  /etc/ggzd/rooms/dots.room
+  /etc/ggzd/rooms/entry.room
+  /etc/ggzd/rooms/escape.room
+  /etc/ggzd/rooms/geekgame.room
+  /etc/ggzd/rooms/ggzcards-bridge.room
+  /etc/ggzd/rooms/ggzcards-fortytwo.room
+  /etc/ggzd/rooms/ggzcards-hearts.room
+  /etc/ggzd/rooms/ggzcards-lapocha.room
+  /etc/ggzd/rooms/ggzcards-spades.room
+  /etc/ggzd/rooms/ggzcards-suaro.room
+  /etc/ggzd/rooms/ggzcards-sueca.room
+  /etc/ggzd/rooms/ggzcards-whist.room
+  /etc/ggzd/rooms/ggzcards.room
+  /etc/ggzd/rooms/hastings.room
+  /etc/ggzd/rooms/keepalive.room
+  /etc/ggzd/rooms/krosswater.room
+  /etc/ggzd/rooms/muehle.room
+  /etc/ggzd/rooms/reversi.room
+  /etc/ggzd/rooms/spades.room
+  /etc/ggzd/rooms/tictactoe.room
+  /etc/ggzd/rooms/tuxman.room
+  /etc/ggzd/rooms/widelands.room
+  /usr/bin/ggzd.exe
+  /usr/bin/ggzduedit.exe
+  /usr/lib/ggzd/geekgameserver.exe
+  /usr/lib/ggzd/ggzd.ccheckers.exe
+  /usr/lib/ggzd/ggzd.chess.exe
+  /usr/lib/ggzd/ggzd.combat.exe
+  /usr/lib/ggzd/ggzd.connectx.exe
+  /usr/lib/ggzd/ggzd.dots.exe
+  /usr/lib/ggzd/ggzd.escape.exe
+  /usr/lib/ggzd/ggzd.ggzcards.ai-random.exe
+  /usr/lib/ggzd/ggzd.ggzcards.ai-spades.exe
+  /usr/lib/ggzd/ggzd.ggzcards.ai-suaro.exe
+  /usr/lib/ggzd/ggzd.ggzcards.exe
+  /usr/lib/ggzd/ggzd.hastings.exe
+  /usr/lib/ggzd/ggzd.reversi.exe
+  /usr/lib/ggzd/ggzd.spades.exe
+  /usr/lib/ggzd/ggzd.tictactoe.exe
+  /usr/lib/ggzd/keepalivesrv.exe
+  /usr/lib/ggzd/krosswater_server.exe
+  /usr/lib/ggzd/muehleserv.exe
+  /usr/lib/ggzd/tuxmanserv.exe
+  /usr/lib/ggzd/widelands_server.exe
+  /usr/share/doc/ggz-server-0.0.14.1/AUTHORS
+  /usr/share/doc/ggz-server-0.0.14.1/COPYING
+  /usr/share/doc/ggz-server-0.0.14.1/ChangeLog
+  /usr/share/doc/ggz-server-0.0.14.1/INSTALL
+  /usr/share/doc/ggz-server-0.0.14.1/NEWS
+  /usr/share/doc/ggz-server-0.0.14.1/README
+  /usr/share/doc/ggz-server-0.0.14.1/TODO
+  /usr/share/ggz/ggzd/ggzcards/spades.aispec
+  /usr/share/ggz/ggzd/ggzcards/suaro.aispec
+  /usr/share/ggz/ggzd/hastings1066/battle_of_hastings
+  /usr/share/ggz/ggzd/hastings1066/coast
+  /usr/share/ggz/ggzd/hastings1066/yorkshire
+  /usr/share/ggz/ggzd/muehle/classic
+  /usr/share/ggz/ggzd/muehle/roman
+  /usr/share/ggz/ggzd/muehle/twelvemensmorris
+  /usr/share/ggz/ggzd/tuxmanserv/level9.pac
+  /usr/share/man/man6/ggzd.6.gz
+  /usr/share/man/man6/ggzduedit.6.gz
+
+(libggzdmod6)
+  /usr/bin/cygggzdmod-6.dll
+
+(libggzdmod++1)
+  /usr/bin/cygggzdmod++-1.dll
+
+(libggzdmod-devel)
+  /usr/include/ggzdmod.h
+  /usr/lib/libggzdmod.dll.a
+  /usr/lib/libggzdmod.la
+  /usr/share/man/man3/ggzdmod.h.3.gz
+
+(libggzdmod++-devel)
+  /usr/include/ggzdmod++/ggzgameserver.h
+  /usr/include/ggzdmod++/mnet.h
+  /usr/include/ggzdmod++/net.h
+  /usr/lib/libggzdmod++.dll.a
+  /usr/lib/libggzdmod++.la
+
+------------------
+
+Port Notes:
+
+----- version 0.0.14.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,7 @@
+category: Games
+requires: cygwin gamin libdb4.4 libexpat1 libggz2 libggzdmod6 libggzdmod++1
+sdesc: "GGZ Gaming Zone server and game servers"
+ldesc: "The main GGZ server (ggzd) and its configuration utility 
+ggzduedit are part of this packages, as are a lot of game servers 
+written in C and C++. In addition, the ggzdmod library and its C++ 
+wrapper is included."

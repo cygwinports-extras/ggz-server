@@ -1,0 +1,14 @@
+inherit ggz
+
+CPPFLAGS+=" -I/usr/include/db4.4"
+
+cabi=6
+xabi=1
+PKG_NAMES="${PN} libggzdmod${cabi} libggzdmod-devel libggzdmod++${xabi} libggzdmod++-devel"
+PKG_HINTS="setup libc libc-dev libcxx libcxx-dev"
+PKG_CONTENTS[0]="--exclude=man3 etc/ usr/bin/ggz* usr/lib/ggzd/ usr/share/"
+PKG_CONTENTS[1]="usr/bin/cygggzdmod-${cabi}.dll"
+PKG_CONTENTS[2]="usr/include/ggzdmod.h usr/lib/libggzdmod.*
+                 usr/share/man/man3/ggzdmod.h.*"
+PKG_CONTENTS[3]="usr/bin/cygggzdmod++-${xabi}.dll"
+PKG_CONTENTS[4]="usr/include/ggzdmod++/ usr/lib/libggzdmod++.*"
