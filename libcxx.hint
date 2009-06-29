@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin libggz2 libggzdmod6
+requires: libggz2 libggzdmod6
 external-source: ggz-server
 sdesc: "GGZ Gaming Zone server C++ library (runtime)"
 ldesc: "The main GGZ server (ggzd) and its configuration utility 

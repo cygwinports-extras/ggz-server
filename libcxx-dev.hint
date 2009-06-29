@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin libgzzdmod++1 libggz-devel libggzdmod-devel
+requires: libgzzdmod++1 libggz-devel libggzdmod-devel
 external-source: ggz-server
 sdesc: "GGZ Gaming Zone server C++ library (development)"
 ldesc: "The main GGZ server (ggzd) and its configuration utility 

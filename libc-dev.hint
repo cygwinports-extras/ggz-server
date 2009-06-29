@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin libggz2 libggz-devel
+requires: libggz2 libggz-devel
 external-source: ggz-server
 sdesc: "GGZ Gaming Zone server C library (development)"
 ldesc: "The main GGZ server (ggzd) and its configuration utility 
